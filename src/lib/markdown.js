@@ -77,13 +77,14 @@ export const getPostBySlug = async (branch,fileName) => {
     return { meta: { ...frontmatter, slug:realSlug }, content }
 
 }
-
+       
 
 export const getAllPostsMeta = async (branch,topic) => {
 
     const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
     const repoFiletree = await res.json()
 
+ console.log(repoFiletree)
     const filesArray = repoFiletree.tree.map(obj => obj.path).filter(path => path.endsWith('.mdx'))
 
     

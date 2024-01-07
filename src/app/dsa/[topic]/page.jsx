@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { FileCode2 } from 'lucide-react';
-import { getAllPostsMeta, getPostBySlug } from '@/lib/markdown'
+import { getAllPostsMeta } from '@/lib/markdown'
 
 export default async  function page({params}) {
     const topic = params.topic

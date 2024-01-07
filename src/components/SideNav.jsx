@@ -4,7 +4,6 @@ import { MousePointer2,Asterisk } from 'lucide-react';
 import Link from 'next/link'
 
 export default function SideNav(topic,subtopic) {
-console.log(dsatopic)
   return (
     <aside className="w-full p-6 sm:w-60 dark:bg-gray-900 dark:text-gray-100 text-white">
         <p className='mt-10 mb-2'>Welcome to DSA prep</p>
@@ -26,6 +25,5 @@ console.log(dsatopic)
 		))}
 	</nav>
 </aside>
-
   );
 }
