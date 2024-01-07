@@ -16,7 +16,9 @@ export default function Layout({ children }) {
       showSideNav ? 'block' : 'hidden'
       
       )}>
+        <div onClick={()=>{setShowSideNav(!showSideNav)}}>
         <SideNav />
+        </div>
       </div>
       <button onClick={()=>{ setShowSideNav(!showSideNav)}} className='text-blue-600 dark:text-white   bg-black md:hidden fixed w-screen shadow-gray-800 py-5 shadow-md px-8 z-40 '>{showSideNav?<X/>:<AlignJustify />}</button>
       <div className="flex-grow md:overflow-y-auto ">
