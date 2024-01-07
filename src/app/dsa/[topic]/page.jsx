@@ -10,7 +10,7 @@ export default async  function page({params}) {
   const posts = await getAllPostsMeta('main',topic)
 
   return (
-    <div className=' flex-wrap flex mt-20'>
+    <div className=' flex-wrap flex mt-20 justify-center w-full'>
 
         {posts.map((post) => (
             <Link href={`/dsa/${topic}/${post.slug}`} key={post.slug} className="w-96  group relative cursor-pointer overflow-hidden bg-black shadow-gray-800 px-6 pt-10 my-3 pb-7 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">

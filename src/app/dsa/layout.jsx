@@ -5,7 +5,7 @@ import { AlignJustify,X } from 'lucide-react';
 import SideNav from '@/components/SideNav';
 import { useState } from 'react';
 import {MDXProvider} from '@mdx-js/react'
- 
+import { Toaster } from "@/components/ui/toaster"
 export default function Layout({ children }) {
 
 
@@ -20,10 +20,9 @@ export default function Layout({ children }) {
       </div>
       <button onClick={()=>{ setShowSideNav(!showSideNav)}} className='text-blue-600 dark:text-white   bg-black md:hidden fixed w-screen shadow-gray-800 py-5 shadow-md px-8 z-40 '>{showSideNav?<X/>:<AlignJustify />}</button>
       <div className="flex-grow md:overflow-y-auto ">
-      <MDXProvider >
         {children}
-      </MDXProvider>
         </div>
+        <Toaster />
     </div>
   );
 }
