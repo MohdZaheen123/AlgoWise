@@ -28,20 +28,42 @@ export default function page() {
       className: "text-blue-500 dark:text-blue-500",
     },
   ];
+  //   return (
+  //     <div className="flex flex-col items-center justify-center  ">
+  //       <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+  //         The road to freedom starts from here
+  //       </p>
+  //       <TypewriterEffectSmooth words={words} />
+  //       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+  //         <Link href='/blogs' className="flex justify-center items-center w-40 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+  //           Back
+  //         </Link>
+  //         <Link href='/' className="w-28 h-10 flex justify-center items-center rounded-xl bg-white text-black border border-black  text-sm">
+  //           Home
+  //         </Link>
+  //       </div>
+  //     </div>
+  //   );
+  // }
+
+
   return (
-    <div className="flex flex-col items-center justify-center h-[40rem]  ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
-        The road to freedom starts from here
-      </p>
-      <TypewriterEffectSmooth words={words} />
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <Link href='/blogs' className="flex justify-center items-center w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-          Back
-        </Link>
-        <Link href='/' className="w-28 h-10 flex justify-center items-center rounded-xl bg-white text-black border border-black  text-sm">
-          Home
-        </Link>
+    <div className="h-screen bg-black flex justify-center items-center w-screen">
+      <div className="flex flex-col items-center justify-center  ">
+        <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+          The road to freedom starts from here
+        </p>
+        {/* <TypewriterEffectSmooth words={words} /> */}
+        <p className="text-3xl text-white">Nothing up here explore other sections</p>
+        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
+          <Link href='/blogs' className="flex justify-center items-center w-40 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+            Back
+          </Link>
+          <Link href='/' className="w-28 h-10 flex justify-center items-center rounded-xl bg-white text-black border border-black  text-sm">
+            Home
+          </Link>
+        </div>
       </div>
     </div>
-  );
+  )
 }
