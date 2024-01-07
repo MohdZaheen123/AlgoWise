@@ -11,14 +11,14 @@ export default function Layout({ children }) {
 
   const [showSideNav, setShowSideNav] = useState(false);
   return (
-    <div className="flex  h-screen  flex-row md:overflow-hidden">
-      <div className={cn(" flex-none md:w-60 hidden md:block",
+    <div className="flex min-h-screen  flex-row md:overflow-hidden relative h-full">
+      <div className={cn(" flex-none md:w-60 hidden md:block absolute z-40 md:static bg-black h-full",
       showSideNav ? 'block' : 'hidden'
       
       )}>
         <SideNav />
       </div>
-      <button onClick={()=>{ setShowSideNav(!showSideNav)}} className='text-white w-10 h-10 bg-black md:hidden absolute top-5 left-7 z-30'>{showSideNav?<X/>:<AlignJustify />}</button>
+      <button onClick={()=>{ setShowSideNav(!showSideNav)}} className='text-blue-600 dark:text-white   bg-black md:hidden fixed w-screen shadow-gray-800 py-5 shadow-md px-8 z-40 '>{showSideNav?<X/>:<AlignJustify />}</button>
       <div className="flex-grow md:overflow-y-auto ">
       <MDXProvider >
         {children}
