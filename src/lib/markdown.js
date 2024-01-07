@@ -58,7 +58,7 @@ export const getPostBySlug = async (branch,fileName) => {
 
 
     const realSlug = fileName.replace(/\.mdx$/, '')
-    const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Dev-Blogs/${branch}/${realSlug}.mdx`,config)
+    const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Blogs/${branch}/${realSlug}.mdx`,config)
     // if (!res.ok) return undefined
    const rawMDX = res.data
 
@@ -81,7 +81,7 @@ export const getPostBySlug = async (branch,fileName) => {
 
 export const getAllPostsMeta = async (branch,topic) => {
 
-    const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Dev-Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
+    const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
     const repoFiletree = await res.json()
     const filesArray = repoFiletree.tree.map(obj => obj.path).filter(path => path.endsWith('.mdx'))
 
