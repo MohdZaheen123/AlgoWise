@@ -1,34 +1,26 @@
-// "use client";
-// import SparklesCore from "@/components/SparklesCore";
-
-
-// export default function page() {
-//   return (
-//     <div className="h-[40rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-//       <div className="w-full absolute inset-0 h-screen">
-//         <SparklesCore
-//           id="tsparticlesfullpage"
-//           background="transparent"
-//           minSize={0.6}
-//           maxSize={1.4}
-//           particleDensity={100}
-//           className="w-full h-full"
-//           particleColor="#FFFFFF"
-//         />
-//       </div>
-//       <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
-//        DSA prep comming Soon
-//       </h1>
-//       <p className="text-center text-white relative text-lgmy-10 z-20">Sit tight. i am working hard to bring this live</p>
-//     </div>
-//   );
-// }
-
-import { CommingSoon } from '@/components/CommingSoon'
-import React from 'react'
+'use client'
+import { motion } from "framer-motion";
+import { LampContainer } from "@/components/Lamp";
 
 export default function page() {
   return (
-    <CommingSoon />
-  )
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
+      >
+        Please Select <br /> The Topic From The Sidebar
+      </motion.h1>
+    </LampContainer>
+  );
 }
+
+
+
+

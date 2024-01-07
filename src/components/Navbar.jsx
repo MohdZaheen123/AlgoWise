@@ -6,7 +6,7 @@ export default function Navbar() {
     '>
       <div className={`mx-auto  flex justify-around w-[95%] `}>
             
-            <Link href='/'><p className={`${dotGothic16.className} text-2xl font-bold`}><span className='text-blue-500'>Dev_</span>Dose</p></Link>
+            <Link href='/'><p className={` text-2xl font-bold`}><span className='text-blue-500'>Dev_</span>Dose</p></Link>
             <div className='flex text-base font-semibold m-1'>
                    <Link href='/about' className='mr-4'><p>About</p></Link>
                     <Link href='/blogs'><p>Blogs</p></Link>

@@ -15,6 +15,7 @@ export default function page() {
       <BlogFeature/>
       <Latestblog/>
       <Newsletter/>
+      <Footer />
     </div>
   )
 }

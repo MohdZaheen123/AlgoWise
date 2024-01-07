@@ -17,29 +17,30 @@ module.exports = {
       },
     },
     extend: {
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        "satr": {
-          '0% 100%': { transform: 'translateX(0)' },
-          '20%': { transform: 'translateX(20px)' },
-          '40%': { transform: 'translateX(40px)' },
-          '50%': { transform: 'translateX(60)' },
-          '60%': { transform: 'translateX(80px)' }
+      typography: {
+      DEFAULT: {
+        css: {
+          maxWidth: '95ch',
+          h2:{
+            color: '#8403fc'
+          },
+          h1:{
+            color: '#00000'
+          },
+          blockquote:{
+            color: '#8403fc'
+          },
+          code:{
+             color:'#03f8fc'
+          }
         }
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "star": "star 5s ease-in-out infinite"
-      },
+      }
+    }
     },
+    
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require("tailwindcss-animate")
+  ],
 }

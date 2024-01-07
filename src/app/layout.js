@@ -1,8 +1,9 @@
 
-
 import { Inter,Sevillana,Silkscreen,Alkatra,DotGothic16} from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 export const alkatra = Alkatra({ subsets: ['latin'], weight: '400'  })
@@ -21,7 +22,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
       
         <div className='max-w-[110rem] scroll-smooth mx-auto'>
+          <div className='main'>
         {children}
+          </div>
         </div>
         </body>
     </html>
