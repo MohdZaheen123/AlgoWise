@@ -16,7 +16,7 @@ export default function Layout({ children }) {
       showSideNav ? 'block' : 'hidden'
       
       )}>
-        <div onClick={()=>{setShowSideNav(!showSideNav)}}>
+        <div className="min-h-screen fixed" onClick={()=>{setShowSideNav(!showSideNav)}}>
         <SideNav />
         </div>
       </div>
