@@ -20,7 +20,7 @@ module.exports = {
       typography: {
       DEFAULT: {
         css: {
-          maxWidth: '95ch',
+          maxWidth: '84ch',
           h2:{
             color: '#8403fc'
           },
@@ -32,6 +32,18 @@ module.exports = {
           },
           code:{
              color:'#03f8fc'
+          },
+          th:{
+            color:'#a83246'
+          },
+          a:{
+            color:'#3458eb'
+          },
+          h3:{
+            color:'#34aeeb'
+          },
+          strong:{
+            color:'#00000'
           }
         }
       }

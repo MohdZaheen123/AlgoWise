@@ -17,6 +17,7 @@ export default function page() {
                 <p className="text-lg pt-3">Join us at Dev_Dose today, let's build together, and shape the future. Explore my project in <Link className='text-blue-600' href='https://github.com/MohdZaheen123/Dev_Dose' target='_blank'>Github</Link>, Dont forget to share your feedback with me at <Link className='text-blue-600' href='https://twitter.com/TheMatrixT8888' target='_blank'>Twitter</Link>. Happy coding!</p>
             </div>
 
+
         </div>
       </div>
     )
