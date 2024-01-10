@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { FileCode2 } from 'lucide-react';
 import { getAllPostsMeta } from '@/lib/markdown'
 import { ChevronsLeft } from 'lucide-react';
+export const fetchCache = 'force-no-store'
+export const dynamic = 'force-dynamic'
+export const dynamicParams = true
 
 export default async  function page({params}) {
     const topic = params.topic

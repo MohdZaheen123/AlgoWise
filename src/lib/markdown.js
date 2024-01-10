@@ -3,6 +3,7 @@
 // import path from 'path'
 import axios from 'axios';
 import { compileMDX } from 'next-mdx-remote/rsc'
+import { unstable_noStore as noStore } from 'next/cache';
 
 
 
@@ -142,7 +143,7 @@ let config = {
 
 export const getPostBySlug = async (branch,fileName) => {
     
-
+    noStore();
 
     const realSlug = fileName.replace(/\.mdx$/, '')
     const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Dev-Blogs/${branch}/${realSlug}.mdx`,config)
@@ -190,7 +191,7 @@ export const getPostBySlug = async (branch,fileName) => {
 
 
 export const getAllPostsMeta = async (branch,topic) => {
-
+    noStore();
     // const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
     // const repoFiletree = await res.json()
     const repoFiletree = await axios.get(`https://api.github.com/repos/MohdZaheen123/Dev-Blogs/git/trees/${branch}?recursive=1`,config)
@@ -203,7 +204,6 @@ export const getAllPostsMeta = async (branch,topic) => {
         const post = await getPostBySlug(branch,file)
         if (post && post.meta.topic === topic) {
             const { meta } = post
-            // console.log(meta)
             posts.push(meta)
         }
     }
