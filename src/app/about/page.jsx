@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function page() {
     return (
       <div className='bg-black w-screen'>
-        <div className="min-h-screen h-fit bg-black text-white flex flex-col pb-10 pt-10 justify-center items-center w-[60%] mx-auto">
+        <div className="min-h-screen h-fit bg-black text-white flex flex-col pb-10 pt-10 justify-center items-center w-[90%] md:w-[70%] mx-auto">
 
             <h1 className="text-2xl font-semibold font-serif">Welcome to <span className='text-blue-600'>Dev_Dose!</span></h1>
             <img src="/about.gif" className="h-80" alt="illustration" />
