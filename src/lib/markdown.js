@@ -53,12 +53,99 @@ let config = {
 
 
 
+// export const getPostBySlug = async (branch,fileName) => {
+    
+
+
+//     const realSlug = fileName.replace(/\.mdx$/, '')
+//     const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Blogs/${branch}/${realSlug}.mdx`,config)
+//     // if (!res.ok) return undefined
+//    const rawMDX = res.data
+
+//     if (rawMDX === '404: Not Found') return undefined
+
+//     const { frontmatter, content } = await compileMDX({
+//         source: rawMDX,
+//         options: {
+//             parseFrontmatter: true,
+//         }
+//     })
+
+
+
+    
+//     return { meta: { ...frontmatter, slug:realSlug }, content }
+
+// }
+       
+
+// export const getAllPostsMeta = async (branch,topic) => {
+
+//     // const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
+//     // const repoFiletree = await res.json()
+//     const repoFiletree = await axios.get(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config)
+//     const filesArray = repoFiletree.data.tree.map(obj => obj.path).filter(path => path.endsWith('.mdx'))
+
+    
+//     const posts = []
+    
+//     for (const file of filesArray) {
+//         const post = await getPostBySlug(branch,file)
+//         if (post && post.meta.topic === topic) {
+//             const { meta } = post
+//             console.log(meta)
+//             posts.push(meta)
+//         }
+//     }
+
+//     return posts
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const getPostBySlug = async (branch,fileName) => {
     
 
 
     const realSlug = fileName.replace(/\.mdx$/, '')
-    const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Blogs/${branch}/${realSlug}.mdx`,config)
+    const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Dev-Blogs/${branch}/${realSlug}.mdx`,config)
     // if (!res.ok) return undefined
    const rawMDX = res.data
 
@@ -77,13 +164,37 @@ export const getPostBySlug = async (branch,fileName) => {
     return { meta: { ...frontmatter, slug:realSlug }, content }
 
 }
-       
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export const getAllPostsMeta = async (branch,topic) => {
 
-    const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
-    const repoFiletree = await res.json()
-    const filesArray = repoFiletree.tree.map(obj => obj.path).filter(path => path.endsWith('.mdx'))
+    // const res = await fetch(`https://api.github.com/repos/MohdZaheen123/Blogs/git/trees/${branch}?recursive=1`,config,{ next: { revalidate: 10 } })
+    // const repoFiletree = await res.json()
+    const repoFiletree = await axios.get(`https://api.github.com/repos/MohdZaheen123/Dev-Blogs/git/trees/${branch}?recursive=1`,config)
+    const filesArray = repoFiletree.data.tree.map(obj => obj.path).filter(path => path.endsWith('.mdx'))
 
     
     const posts = []
@@ -92,9 +203,10 @@ export const getAllPostsMeta = async (branch,topic) => {
         const post = await getPostBySlug(branch,file)
         if (post && post.meta.topic === topic) {
             const { meta } = post
+            // console.log(meta)
             posts.push(meta)
         }
     }
 
     return posts
-}
+}   	

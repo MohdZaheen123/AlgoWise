@@ -24,3 +24,25 @@ export default function page() {
 
 
 
+// import { getAllPostsMeta } from "@/lib/markdown"
+
+
+// export default async function page({params}) {
+//   const topic = params.topic
+//  const post = await getAllPostsMeta('main',topic)
+// //  console.log(post)
+//   return (
+//     <div>
+//       {post.map((post) => (
+        
+//         <div className="bg-blue-800" key={post.slug}>
+//           <h1 className="my-5">{post.author}</h1>
+//           {/* <p>{post.description}</p> */}
+//         </div>
+//       ))}
+//     </div>
+//   )
+// }
+
+
+
