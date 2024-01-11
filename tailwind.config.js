@@ -1,65 +1,81 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+import colors from "tailwindcss/colors";
+import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
+
+
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: ["class"],
-  content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-  ],
-  prefix: "",
-  theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+export const darkMode = ["class"];
+export const content = [
+  './pages/**/*.{js,jsx}',
+  './components/**/*.{js,jsx}',
+  './app/**/*.{js,jsx}',
+  './src/**/*.{js,jsx}',
+];
+export const prefix = "";
+export const theme = {
+  container: {
+    center: true,
+    padding: "2rem",
+    screens: {
+      "2xl": "1400px",
     },
-    extend: {
-      typography: {
+  },
+  extend: {
+    typography: {
       DEFAULT: {
         css: {
           maxWidth: '84ch',
-          h2:{
+          h2: {
             color: '#8403fc'
           },
-          h1:{
+          h1: {
             color: '#00000'
           },
-          blockquote:{
+          blockquote: {
             color: 'darkcyan'
           },
-          pre:{
-             color:'#00000',
-             'background-color': 'darkslategrey'
+          pre: {
+            color: '#00000',
+            'background-color': 'darkslategrey'
           },
-          th:{
-            color:'#a83246'
+          th: {
+            color: '#a83246'
           },
-          a:{
-            color:'#3458eb'
+          a: {
+            color: '#3458eb'
           },
-          h3:{
-            color:'palevioletred'
+          h3: {
+            color: 'palevioletred'
           },
-          strong:{
-            color:'#00000'
+          strong: {
+            color: '#00000'
           },
-          aside:{
-    border: '2px solid',
-    'border-radius': '15px',
-    padding: '0px 1rem',
-    color: 'palevioletred'
+          aside: {
+            border: '2px solid',
+            'border-radius': '15px',
+            padding: '0px 1rem',
+            color: 'palevioletred'
           }
         }
       }
     }
-    },
-    
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require("tailwindcss-animate")
-  ],
+};
+export const plugins = [
+  require('@tailwindcss/typography'),
+  require("tailwindcss-animate"),
+  addVariablesForColors
+];
+
+
+
+function addVariablesForColors({ addBase, theme }) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
 }
