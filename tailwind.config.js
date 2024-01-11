@@ -28,10 +28,11 @@ module.exports = {
             color: '#00000'
           },
           blockquote:{
-            color: '#8403fc'
+            color: 'darkcyan'
           },
-          code:{
-             color:'#03f8fc'
+          pre:{
+             color:'#00000',
+             'background-color': 'darkslategrey'
           },
           th:{
             color:'#a83246'
@@ -40,10 +41,16 @@ module.exports = {
             color:'#3458eb'
           },
           h3:{
-            color:'#34aeeb'
+            color:'palevioletred'
           },
           strong:{
             color:'#00000'
+          },
+          aside:{
+    border: '2px solid',
+    'border-radius': '15px',
+    padding: '0px 1rem',
+    color: 'palevioletred'
           }
         }
       }
