@@ -5,19 +5,19 @@ export const dsatopic=[
     subtopic:[
         {
             subtopic:'1D Array',
-            link:'/dsa/array/1darray'
+            link:'/dsa/array/'
         },
         {
             subtopic:'2D Array',
-            link:'/dsa/array/2darray'
+            link:'/dsa/2darray'
         },
         {
             subtopic:'3D Array',
-            link:'/dsa/array/3darray'
+            link:'/dsa/3darray'
         },
         {
             subtopic:'Binary Search',
-            link:'/dsa/array/binarysearch'
+            link:'/dsa/binarysearch'
         }
     ]
   },
@@ -27,19 +27,19 @@ export const dsatopic=[
     subtopic:[
         {
             subtopic:'1D Array',
-            link:'/dsa/array/1darray'
+            link:'/dsa/strings'
         },
         {
             subtopic:'2D Array',
-            link:'/dsa/array/2darray'
+            link:'/dsa/2darray'
         },
         {
             subtopic:'3D Array',
-            link:'/dsa/array/3darray'
+            link:'/dsa/3darray'
         },
         {
             subtopic:'Binary Search',
-            link:'/dsa/array/binarysearch'
+            link:'/dsa/binarysearch'
         }
     ]
   },
@@ -49,19 +49,19 @@ export const dsatopic=[
     subtopic:[
         {
             subtopic:'1D Array',
-            link:'/dsa/array/1darray'
+            link:'/dsa/1darray'
         },
         {
             subtopic:'2D Array',
-            link:'/dsa/array/2darray'
+            link:'/dsa/2darray'
         },
         {
             subtopic:'3D Array',
-            link:'/dsa/array/3darray'
+            link:'/dsa/3darray'
         },
         {
             subtopic:'Binary Search',
-            link:'/dsa/array/binarysearch'
+            link:'/dsa/binarysearch'
         }
     ]
   }

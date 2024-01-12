@@ -12,6 +12,8 @@ export default async function page({params}) {
     const postslug = params.postslug
     const topic = params.topic
     const post = await getPostBySlug('main',postslug) 
+   
+    
   return (
     <div className="w-[85%] md:w-[95%] mx-auto  mt-24 ">
        <Link href={`/dsa/${topic}`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link>

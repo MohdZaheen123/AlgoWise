@@ -207,6 +207,8 @@ export const getAllPostsMeta = async (branch,topic) => {
             posts.push(meta)
         }
     }
+    posts.sort((a, b) => a.id - b.id);
+    posts.reverse()
 
     return posts
 }   	

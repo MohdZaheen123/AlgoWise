@@ -34,7 +34,7 @@ export default function SideNav(topic, subtopic) {
 										})
 									}}
 
-									href={`/dsa/${topic.topic}/${subtopic.subtopic}`} key={subtopic.subtopic} className="flex items-center">
+									href={`${subtopic.link}`} key={subtopic.subtopic} className="flex items-center">
 									<Asterisk className='h-4 text-blue-500' />
 									{subtopic.subtopic}
 								</Link>

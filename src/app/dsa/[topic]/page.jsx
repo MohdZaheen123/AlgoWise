@@ -12,6 +12,20 @@ export default async  function page({params}) {
     const topic = params.topic
   
   const posts = await getAllPostsMeta('main',topic)
+  
+if(posts[0]==undefined){
+    return (
+        <div className=' flex-wrap flex flex-col  mt-20 w-full'>
+            <div>
+        {/* <Link href={`/dsa/`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link> */}
+        <h1 className='text-white mx-7 my-3 font-semibold text-2xl'>DSA - <span className='text-blue-600'>{topic}</span></h1>
+            </div>
+            <div className='flex flex-wrap justify-center w-full'>
+            <h1 className='text-white mx-7 my-3 font-semibold text-2xl'>No Posts Found</h1>
+            </div>
+        </div>
+    )
+}
 
   return (
     <div className=' flex-wrap flex flex-col  mt-20 w-full'>
