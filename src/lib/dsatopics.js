@@ -5,7 +5,7 @@ export const dsatopic=[
     subtopic:[
         {
             subtopic:'1D Array',
-            link:'/dsa/array/'
+            link:'/dsa/array?subtopic=1darray'
         },
         {
             subtopic:'2D Array',
