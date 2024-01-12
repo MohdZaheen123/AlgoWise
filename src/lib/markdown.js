@@ -64,7 +64,7 @@ export const getAllPostsMeta = async (branch,topic,subtopic) => {
             }
         }
         else{
-            if (post && post.meta.subtopic === subtopic) {
+            if (post && post.meta.subtopic.includes(subtopic)) {
                 const { meta } = post
                 posts.push(meta)
             }

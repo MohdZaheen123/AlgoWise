@@ -9,15 +9,15 @@ export const dsatopic=[
         },
         {
             subtopic:'2D Array',
-            link:'/dsa/2darray'
+            link:'/dsa/array?subtopic=2darray'
         },
         {
             subtopic:'3D Array',
-            link:'/dsa/3darray'
+            link:'/dsa/array?subtopic=3darray'
         },
         {
             subtopic:'Binary Search',
-            link:'/dsa/binarysearch'
+            link:'/dsa/array?subtopic=binarysearch'
         }
     ]
   },
