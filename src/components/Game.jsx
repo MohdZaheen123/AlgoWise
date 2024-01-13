@@ -122,6 +122,7 @@ export default function Component() {
 
 <div className=" h-32 ml-4">
     <p className="flex text-blue-500"><MessageSquareText className="w-20 mt-1 " /> : Hey! is your brain fried of this blog? . Well what about a game with me? </p>
+
     <Button onClick={()=>{setVisible(true)}} className="mx-9 my-2 " >Click Here</Button>
 </div>
 
@@ -132,6 +133,7 @@ export default function Component() {
         <p>Your Sign : X</p>
         <p>Computer Sign : O</p>
     </div>
+
 </div>
 <main key="1" className="flex flex-col items-center justify-center  ">
     <div className="mb-8 text-xl font-semibold text-gray-100">

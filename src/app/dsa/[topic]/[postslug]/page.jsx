@@ -16,6 +16,7 @@ export default async function page({params}) {
     
   return (
     <div className="w-[85%] md:w-[95%] mx-auto  mt-24 ">
+       
        <Link href={`/dsa/${topic}`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link>
         <div className="  min-h-screen max-w-none flex">
             <div className=" text-white mx-5  prose py-20 ">{post.content}
@@ -28,8 +29,13 @@ export default async function page({params}) {
               </div>
              
             <Game />
+            
             </div>
         </div>
     </div>
   )
 }
+
+
+
+
