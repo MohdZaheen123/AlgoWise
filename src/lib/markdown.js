@@ -4,7 +4,9 @@
 import axios from 'axios';
 import { compileMDX } from 'next-mdx-remote/rsc'
 import { unstable_noStore as noStore } from 'next/cache';
-
+import { serialize } from 'next-mdx-remote/serialize'
+import rehypePrism from 'rehype-prism-plus';
+import rehypeCodeTitles from 'rehype-code-titles';
 
 
 // const rootDirectory = path.join(process.cwd(), 'src', 'content')
@@ -29,17 +31,33 @@ export const getPostBySlug = async (branch,fileName) => {
 
     if (rawMDX === '404: Not Found') return undefined
 
+
+
+
     const { frontmatter, content } = await compileMDX({
         source: rawMDX,
         options: {
             parseFrontmatter: true,
-        }
+        },
+        rehypePlugins: [
+            rehypeCodeTitles,
+            rehypePrism
+        ]
     })
+
+    const html = await serialize(rawMDX, { mdxOptions: {
+        rehypePlugins: [
+            rehypeCodeTitles,
+            rehypePrism
+        ]
+    } });
+
+   
 
 
 
     
-    return { meta: { ...frontmatter, slug:realSlug }, content }
+    return { meta: { ...frontmatter, slug:realSlug }, html }
 
 }
         

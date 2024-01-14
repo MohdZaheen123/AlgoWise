@@ -26,7 +26,12 @@ export const theme = {
         css: {
           maxWidth: '84ch',
           h2: {
-            color: '#8403fc'
+            color: '#8403fc',
+            display:'none'
+          },
+          hr: {
+            color: '#8403fc',
+            display:'none'
           },
           h1: {
             color: '#00000'
@@ -36,7 +41,7 @@ export const theme = {
           },
           pre: {
             color: '#00000',
-            'background-color': 'darkslategrey'
+            'background-color': '#082630'
           },
           th: {
             color: '#a83246'

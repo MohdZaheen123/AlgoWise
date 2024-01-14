@@ -6,6 +6,7 @@ import { ChevronsLeft } from 'lucide-react';
 import Footer from "@/components/Footer";
 import { Quotecard } from "@/components/Quotecard";
 import Game from "@/components/Game";
+import Blogrender from "@/components/Blogrender";
 
 
 export default async function page({params}) {
@@ -19,7 +20,10 @@ export default async function page({params}) {
        
        <Link href={`/dsa/${topic}`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link>
         <div className="  min-h-screen max-w-none flex">
-            <div className=" text-white mx-5  prose py-20 ">{post.content}
+            <div className=" text-white mx-5  prose py-20 ">
+            
+              {/* {post.content} */}
+              <Blogrender post={post} />
             <Footer />
             </div>
             <div className="text-white hidden  border-l-2 w-80 mx-3 pt-32 h-[100rem] xl:flex flex-col justify-between">
