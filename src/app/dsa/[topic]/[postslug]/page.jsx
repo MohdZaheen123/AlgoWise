@@ -16,7 +16,7 @@ export default async function page({params}) {
    
     
   return (
-    <div className="w-[98%] md:w-[95%] mx-auto  mt-24 ">
+    <div className="w-[98%] md:w-[95%] mx-auto  mt-14 ">
        
        <Link href={`/dsa/${topic}`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link>
         <div className="  min-h-screen max-w-none flex">
