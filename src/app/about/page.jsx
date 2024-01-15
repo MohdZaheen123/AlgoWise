@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 export default function page() {
     return (
-      <div className=' h-screen'>
+      <div className=' min-h-screen'>
          <div className="min-h-screen h-fit bg-black text-white flex flex-col pb-10 pt-10 justify-center items-center w-[90%] md:w-[70%] mx-auto">
 
             <h1 className="text-2xl font-semibold font-serif mb-20">Welcome to <span className='text-blue-600'>Dev_Dose!</span></h1>
-            <div className='flex justify-center items-center'>
+            <div className='md:flex justify-center items-center'>
             <img src="/about.gif" className="h-80" alt="illustration" />
             <div className="mx-10">
                 <p className="font-serif font-semibold text-xl py-2 underline underline-offset-4 text-blue-600">About</p>
