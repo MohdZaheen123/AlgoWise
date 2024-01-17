@@ -42,7 +42,7 @@ const words =
 
 export default function page() {
   return (
-    <div className='h-[110rem] py-10 bg-black text-white  mx-auto md:w-screen'>
+    <div className='h-full py-10 bg-black text-white  mx-auto md:w-screen'>
       <Link href='/' className='text-red-500 mx-10 text-lg font-semibold md:mx-32'>Home</Link>
       <h1 className='bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent text-center text-3xl font-bold'>Explore Blogs</h1>
       <TracingBeam>
@@ -63,7 +63,7 @@ export default function page() {
 
 
 
-            <p>Please provide your feedback and suggestions to me</p>
+            <p className='text-center'>Please provide your feedback and suggestions to me, for imporving this blog at <Link href='https://twitter.com/TheMatrixT8888' className='text-blue-500'>Twitter</Link></p>
 
             <div className='flex flex-wrap justify-center  my-5 bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent'>
               <div className='flex items-center md:flex-col '>

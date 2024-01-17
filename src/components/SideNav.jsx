@@ -10,7 +10,7 @@ export default function SideNav(topic, subtopic) {
 	return (
 		<aside className=" md:overflow-scroll  z-50 p-6 sm:w-60 bg-black  dark:text-gray-100 text-white min-h-screen">
 			<p className='mt-10 mb-2'>Welcome to DSA prep</p>
-			<Link className='flex items-center mb-8 text-md text-red-500' href='/blogs'><MousePointer2 className='h-4' />Home</Link>
+			<Link className='flex items-center mb-8 text-md text-red-500' href='/blogs'><MousePointer2 className='h-4' />Back</Link>
 			<nav className="space-y-8 text-sm">
 
 				{dsatopic.map((topic) => (
