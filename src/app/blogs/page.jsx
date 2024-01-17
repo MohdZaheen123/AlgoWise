@@ -1,13 +1,13 @@
 import Link from "next/link"
 import { Code2, Mails, Brain, HardDriveUpload,ChevronsLeft,BarChart4 } from 'lucide-react';
 import { buttonVariants } from "@/components/ui/button"
-
+import Image from "next/image";
 
 export default function page() {
   return (
     <div className="">
 
-      <div className="text-white h-screen  max-w-5xl mx-auto flex flex-col  justify-center ">
+      <div className="text-white h-screen w-[90%]  mx-auto flex flex-col  justify-center ">
 
 
 
@@ -37,7 +37,8 @@ export default function page() {
           <p className="text-center my-8 md:text-lg font-semibold">Explore various blogs here... <br /><span className="flex"> DSA ,DEV, System Design<BarChart4 className="mx-3 "/></span></p>
           <div className="mr-24"></div>
           </div>
-          <img src="blog.png" className="md:h-96 h-48 mx-auto" alt="" />
+          {/* <img src="/blog.png" className="md:h-96 h-48 mx-auto" alt="" /> */}
+          <Image width={750} height={80} src="/blog.png" className="mx-auto" alt="" />
         </div>
 
 

@@ -47,7 +47,7 @@ export default async function page({ params, searchParams }) {
             
             <div className='flex flex-wrap justify-center w-full'>
                 {posts.map((post) => (
-                    <Link href={{ pathname: `/dsa/${topic}/${post.slug}`, query: { page: `${topic}` } }} key={post.slug} className="w-96  group relative cursor-pointer overflow-hidden bg-black shadow-gray-800 px-6 pt-10 my-3 pb-7 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
+                    <Link href={{ pathname: `/dsa/${topic}/${post.slug}`, query: { page: `${topic}` } }} key={post.slug} className="w-[27rem]  group relative cursor-pointer overflow-hidden bg-black shadow-gray-800 px-6 pt-10 my-3 pb-7 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
                         <span className="absolute top-10 z-0 h-20 w-20 rounded-full bg-sky-800 transition-all duration-300 group-hover:scale-[10]"></span>
                         <span className="relative z-10 mx-auto max-w-md">
                             <span className="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400">
