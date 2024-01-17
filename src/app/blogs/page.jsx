@@ -1,64 +1,88 @@
-import Link from "next/link"
-import { Code2, Mails, Brain, HardDriveUpload,ChevronsLeft,BarChart4 } from 'lucide-react';
-import { buttonVariants } from "@/components/ui/button"
-import Image from "next/image";
+
+import Image from 'next/image'
+import TracingBeam from '@/components/TracingBeam'
+import GenerateText from '@/components/GenerateText'
+import CardHover from '@/components/CardHover';
+import Link from 'next/link';
+
+
+
+export const projects = [
+  {
+    title: "DSA Problems",
+    description:
+      "Boost your brain with a collection of DSA problems solved by me, with detailed explanation and approach.",
+    link: "/dsa",
+  },
+  {
+    title: "System Design",
+    description:
+      "Learn how to design scalable systems, prepare for system design interviews and ace them. ",
+    link: "/design",
+  },
+  {
+    title: "Web Development",
+    description:
+      "Explore the world of web development, learn about various technologies and frameworks.",
+    link: "/webdev",
+  },
+  {
+    title: "News",
+    description:
+      "Stay updated with latest news and trends in tech industry.",
+    link: "/news ",
+  }
+];
+
+
+
+const words =
+  "Dive into the coding cosmos with Dev_Dose, where 0s and 1s collide to craft digital wonders. Unleash your inner coder, explore the magic of programming. Welcome to the heartbeat of code!";
+
 
 export default function page() {
   return (
-    <div className="">
+    <div className='h-[110rem] py-10 bg-black text-white  mx-auto md:w-screen'>
+      <Link href='/' className='text-red-500 mx-10 text-lg font-semibold md:mx-32'>Home</Link>
+      <h1 className='bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent text-center text-3xl font-bold'>Explore Blogs</h1>
+      <TracingBeam>
+        <div className='min-h-screen  bg-black md:w-[65rem]'>
+          <div className='flex flex-col w-[90%]'>
+            <div className='pt-10 '>
+              <GenerateText words={words} />
+            </div>
 
-      <div className="text-white h-screen w-[90%]  mx-auto flex flex-col  justify-center ">
-
-
-
-
-        <div className="mt-10 mb-10 md:mt-0 md:mb-0 flex justify-around  items-center">
-          <div className="mt-10">
-            <p>DSA problems solved</p>
-            <p className="flex">Boost your brain <Brain className="text-red-500 mx-1" /></p>
-            <Link href='/dsa' className={buttonVariants({ variant: "default" })}>Explore</Link>
-          </div>
-
-
-
-          <div className="mt-10">
-
-            <p>System design, design</p>
-            <p className="flex"> scalable systems.. <HardDriveUpload className="text-red-500 mx-1" /></p>
-            <Link href='/design' className={buttonVariants({ variant: "default" })}>Explore</Link>
-          </div>
-
-        </div>
+            <Image src='/study.jpg' height={300} width={300} className='mx-auto mt-10' alt='' />
+             <blockquote className='bg-purple-700 opacity-60 py-6 rounded-xl px-5 md:px-10 ml-14'>
+                   Explore blogs related to various topics like DSA, web development, system design and many more.
+                   stay updated with latest news and trends in tech industry.<span className='text-red-200'>Scroll Below </span>
+             </blockquote>
+            <div className="max-w-5xl mx-auto px-8">
+              <CardHover items={projects} />
+            </div>
 
 
-        <div className=" flex flex-col  justify-center items-center  ">
-          <div className="flex items-center justify-around w-full">
-          <Link href='/' className={buttonVariants({ variant: "ghost" })}><ChevronsLeft className="h-5 bg-transparent" />Home</Link>
-          <p className="text-center my-8 md:text-lg font-semibold">Explore various blogs here... <br /><span className="flex"> DSA ,DEV, System Design<BarChart4 className="mx-3 "/></span></p>
-          <div className="mr-24"></div>
-          </div>
-          {/* <img src="/blog.png" className="md:h-96 h-48 mx-auto" alt="" /> */}
-          <Image width={750} height={80} src="/blog.png" className="mx-auto" alt="" />
-        </div>
 
+            <p>Please provide your feedback and suggestions to me</p>
 
-        <div className="flex-1 flex justify-around  items-center ">
-          <div className="">
-            <p>Stay ahead on the line</p>
-            <p className="flex">with latest news! < Mails className="mx-2 text-red-500" /></p>
-            <Link href='/news' className={buttonVariants({ variant: "default" })}>Explore</Link>
+            <div className='flex flex-wrap justify-center  my-5 bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent'>
+              <div className='flex items-center md:flex-col '>
+                <Image src='/plan.png' width={200} height={200} className='' alt='' />
+                <p className='text-center font-bold text-lg '>Plan</p>
+              </div>
+              <div className='flex items-center md:flex-col  '>
+                <Image src='/build.png' width={200} height={200} className='' alt='' />
+                <p className='text-center font-bold text-lg'>Design</p>
+              </div>
+              <div className='flex items-center md:flex-col  '>
+                <Image src='/design.png' width={200} height={200} className='' alt='' />
+                <p className='text-center font-bold text-lg'>Build</p>
+              </div>
+            </div>
 
-          </div>
-
-
-          <div className="">
-
-            <p>Hey come explore latest</p>
-            <p className="flex "> web dev blogs <Code2 className="mx-2 text-red-500" /> </p>
-            <Link href='/webdev' className={buttonVariants({ variant: "default" })}>Explore</Link>
           </div>
         </div>
-      </div>
+      </TracingBeam>
     </div>
   )
 }
