@@ -12,10 +12,10 @@ export default function Layout({ children }) {
   const [showSideNav, setShowSideNav] = useState(false);
   return (
     <div className="flex min-h-screen  flex-row md:overflow-hidden relative h-full">
-      <div className={cn(" flex-none md:w-60 hidden md:block absolute z-40 md:static bg-black h-full",
+      <div className={cn(" flex-none w-56  hidden md:block absolute z-40 md:static bg-black h-full",
       showSideNav ? 'block' : 'hidden'
       )}>
-        <div className="h-screen  overflow-scroll" onClick={()=>{setShowSideNav(!showSideNav)}}>
+        <div className="h-screen  overflow-scroll overflow-x-hidden" onClick={()=>{setShowSideNav(!showSideNav)}}>
         <SideNav />
         </div>
       </div>

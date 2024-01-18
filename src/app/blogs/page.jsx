@@ -63,7 +63,7 @@ export default function page() {
 
 
 
-            <p className='text-center'>Please provide your feedback and suggestions to me, for imporving this blog at <Link href='https://twitter.com/TheMatrixT8888' className='text-blue-500'>Twitter</Link></p>
+            <p className='text-center'>Please provide your feedback and suggestions to me, for imporving this blog at <Link href='https://twitter.com/TheMatrixT8888' target='_blank' className='text-blue-500'>Twitter</Link></p>
 
             <div className='flex flex-wrap justify-center  my-5 bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent'>
               <div className='flex items-center md:flex-col '>
