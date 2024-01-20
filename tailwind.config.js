@@ -41,7 +41,7 @@ export const theme = {
           },
           pre: {
             color: '#00000',
-            'background-color': '#082630'
+            'background-color': '#082630',
           },
           th: {
             color: '#a83246'
@@ -54,6 +54,10 @@ export const theme = {
           },
           strong: {
             color: '#00000'
+          },
+          code: {
+            width: '40%',
+            margin: '0 auto',
           },
           aside: {
             border: '2px solid',

@@ -45,6 +45,11 @@
      padding: 1em;
      margin: 0em 0;
      overflow: auto;
+     @media only screen and (max-width: 600px) {
+        width: 95%;
+        margin: auto;
+    overflow-x: scroll;
+      }
  }
  
  :not(pre) > code[class*="language-"],

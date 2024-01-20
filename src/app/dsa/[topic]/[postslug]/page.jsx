@@ -16,11 +16,11 @@ export default async function page({params}) {
    
     
   return (
-    <div className="w-[100%] md:w-[95%] mx-auto  mt-24 ">
+    <div className="w-full mx-auto  md:w-[95%]  mt-24 ">
        
        <Link href={`/dsa/${topic}`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link>
         <div className="  min-h-screen max-w-none flex">
-            <div className=" text-white mx-5  prose py-10 ">
+            <div className="w-[94%] mx-auto text-white  py-5 ">
               
               {/* {post.content} */}
               <Blogrender post={post} />
