@@ -31,7 +31,7 @@ import { cn } from "@/lib/utils";
             return (
               <motion.span
                 key={word + idx}
-                className="text-white opacity-0"
+                className="text-white opacity-0 "
               >
                 {word}{" "}
               </motion.span>

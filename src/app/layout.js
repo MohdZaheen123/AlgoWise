@@ -21,10 +21,13 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
       
+
+        <div className='w-full h-full bg-black'>
         <div className='max-w-[110rem] scroll-smooth mx-auto'>
           <div className='main'>
         {children}
           </div>
+        </div>
         </div>
         </body>
     </html>

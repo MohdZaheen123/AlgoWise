@@ -21,7 +21,7 @@ const quote = await datafetch()
 
   return (
     (
-    <div className="min-h-[30rem] ml-5 ">
+    <div className="min-h-[30rem]  mx-3">
     <div
       className="w-[90%]  max-w-md my-10 bg-gray-800  dark:bg-gray-800 rounded-xl shadow-md overflow-hidden mx-auto">
       <div className="flex justify-between items-center px-6 py-4">
@@ -34,30 +34,6 @@ const quote = await datafetch()
             <div className="text-sm text-gray-500 dark:text-gray-200">@{quote.author}</div>
           </div>
         </div>
-        {/* <div>
-          <Select className="w-6 h-6 text-gray-500 dark:text-gray-200">
-            <SelectTrigger aria-label="Options">
-              <svg
-                className=" w-6 h-6 text-gray-500 dark:text-gray-200"
-                fill="none"
-                height="24"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="1" />
-                <circle cx="19" cy="12" r="1" />
-                <circle cx="5" cy="12" r="1" />
-              </svg>
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="delete">Delete tweet</SelectItem>
-            </SelectContent>
-          </Select>
-        </div> */}
       </div>
       <div className="px-6 py-4">
         <div className="text-sm  dark:text-gray-200 text-white">

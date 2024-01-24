@@ -3,6 +3,15 @@
 
 
 // Assuming you have a Button component imported
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
 import { Button } from "@/components/ui/button";
 import { MessageSquareText } from "lucide-react";
 import React, { useState, useEffect } from 'react';
@@ -66,6 +75,7 @@ export default function Component() {
           return i;
         }
       }
+      
     }
 
     // Block opponent's winning move
@@ -84,7 +94,6 @@ export default function Component() {
       if (!cell) acc.push(index);
       return acc;
     }, []);
-
     const randomIndex = Math.floor(Math.random() * availableMoves.length);
     return availableMoves[randomIndex];
   };
@@ -118,15 +127,19 @@ export default function Component() {
   };
 
   return (
-<div>
+<div className="">
 
-<div className=" h-32 ml-4">
-    <p className="flex text-blue-500"><MessageSquareText className="w-20 mt-1 " /> : Hey! is your brain fried of this blog? . Well what about a game with me? </p>
+<Dialog>
+  <DialogTrigger asChild>
+  <div className=" h-32 ml-4">
+    <p className="flex mt-10 text-blue-500"><MessageSquareText className="w-20 mt-1 " /> : Hey! is your brain fried of this blog? . Well what about a game with me? </p>
 
     <Button onClick={()=>{setVisible(true)}} className="mx-9 my-2 " >Click Here</Button>
 </div>
+  </DialogTrigger>
+  <DialogContent>
 
-<div className={visible?`block`:`hidden`}>
+    <div className={visible?`block`:`hidden`}>
 <div className="bg-gray-800 text-white flex flex-col justify-center items-center mx-5 rounded-lg">
     <p className="pt-2">TicTacToe Instructions</p>
     <div className="flex flex-col items-start w-full px-3 py-2">
@@ -136,11 +149,12 @@ export default function Component() {
 
 </div>
 <main key="1" className="flex flex-col items-center justify-center  ">
-    <div className="mb-8 text-xl font-semibold text-gray-100">
+    <div className="my-8 text-xl font-semibold text-gray-100">
         {winner ? (
             winner === 'Draw' ? 'It\'s a Draw!' : `Player ${winner} wins!`
         ) : (
             isPlayerX ? 'Player X\'s Turn' : 'Computer\'s Turn'
+          
         )}
     </div>
     <div className="grid grid-cols-3 gap-2 w-52 h-52">
@@ -148,7 +162,7 @@ export default function Component() {
             <div
                 key={index}
                 onClick={() => handleClick(index)}
-                className="border border-gray-600 bg-gray-800 w-16 h-16 rounded-md flex items-center justify-center text-2xl font-bold cursor-pointer"
+                className="border border-gray-600 text-white bg-gray-800 w-16 h-16 rounded-md flex items-center justify-center text-2xl font-bold cursor-pointer"
             >
                 {cell}
             </div>
@@ -159,6 +173,13 @@ export default function Component() {
     </Button>
 </main>
 </div>
+  </DialogContent>
+</Dialog>
+
+
+
+
+
 </div>  
   );
 }
