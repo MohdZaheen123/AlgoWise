@@ -26,7 +26,7 @@ export default async function page({params}) {
               <Blogrender post={post} />
             <Footer />
             </div>
-            <div className="w-96 hidden xl:flex justify-center h-screen items-center absolute right-0 ">
+            <div className="w-96 hidden 2xl:flex justify-center h-screen items-center absolute right-0 ">
             <div className="text-white  border-l-2  mx-3 xl:block flex-col ">
                <div className=" ml-5">
                 {post.meta.contents &&<h3 className="font-semibold antialiased underline underline-offset-4 text-red-500">Table of contents</h3>}
