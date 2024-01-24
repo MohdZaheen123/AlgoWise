@@ -15,7 +15,7 @@ export default function Layout({ children }) {
       <div className={cn(" flex-none w-56  hidden md:block absolute z-40 md:static bg-black h-full",
       showSideNav ? 'block' : 'hidden'
       )}>
-        <div className="h-screen  overflow-scroll overflow-x-hidden" onClick={()=>{setShowSideNav(!showSideNav)}}>
+        <div className="h-screen  overflow-scroll overflow-x-hidden border-r-2 border-sky-900  rounded-lg " onClick={()=>{setShowSideNav(!showSideNav)}}>
         <SideNav />
         </div>
       </div>

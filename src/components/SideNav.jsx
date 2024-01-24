@@ -45,7 +45,7 @@ export default function SideNav(topic, subtopic) {
 		// 		))}
 		// 	</nav>
 		// </aside>
-		<aside className=" w-full  p-6 mt-20 md:mt-10 z-50 sm:w-80 dark:bg-gray-900 text-white">
+		<aside className=" w-full  p-6 mt-20 md:mt-10 z-50 sm:w-80  rounded-xl text-white">
 			<Link className='flex items-center mb-3 text-md text-red-500' href='/blogs'><MousePointer2 className='h-4' />Back</Link>
 			<nav className="space-y-8 text-sm">
 				{dsatopic.map((topic) => (

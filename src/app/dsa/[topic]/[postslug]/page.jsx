@@ -19,15 +19,15 @@ export default async function page({params}) {
     <div className="w-full mx-auto  md:w-[95%]  mt-24 ">
        
        <Link href={`/dsa/${topic}`} className='flex text-white'><ChevronsLeft className='text-white ml-5'/>Back</Link>
-        <div className="  min-h-screen max-w-none flex">
+        <div className="  min-h-screen max-w-none flex flex-col">
             <div className="w-[94%] mx-auto text-white  py-5 ">
               
               {/* {post.content} */}
               <Blogrender post={post} />
-            <Footer />
+            {/* <Footer /> */}
             </div>
             <div className="w-96 hidden 2xl:flex justify-center h-screen items-center absolute right-0 ">
-            <div className="text-white  border-l-2  mx-3 xl:block flex-col ">
+            <div className="text-white  border-l-2 border-sky-900  mx-3 xl:block flex-col ">
                <div className=" ml-5">
                 {post.meta.contents &&<h3 className="font-semibold antialiased underline underline-offset-4 text-red-500">Table of contents</h3>}
               {post.meta.contents && post.meta.contents.map((item,index) => (
@@ -42,7 +42,6 @@ export default async function page({params}) {
               </div> */}
              
             <Game />
-            
             </div>
             </div>
         </div>
