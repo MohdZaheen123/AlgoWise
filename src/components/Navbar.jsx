@@ -1,4 +1,4 @@
-import { dotGothic16 } from '../app/layout'
+
 import Link from 'next/link'
 export default function Navbar() {
   return (

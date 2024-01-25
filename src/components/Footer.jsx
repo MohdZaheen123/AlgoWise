@@ -14,9 +14,9 @@ export default function Footer() {
         <p className='text-center text-lg font-semibold'>Follow My Socials</p>
         <Badge >@Mohamed Zaheen</Badge>
         <div className='flex pt-10 pb-4'>
-          <Link className='mx-3' target='_blank' href='https://twitter.com/TheMatrixT8888'><Twitter /></Link>
-          <Link className='mx-3' target='_blank' href='https://github.com/MohdZaheen123'><Github /></Link>
-          <Link className='mx-3' target='_blank' href='https://www.linkedin.com/in/mohamed-zaheen-a9a169256/'><Linkedin /></Link>
+          <Link className='mx-3' aria-label='Go to twitter account' target='_blank' href='https://twitter.com/TheMatrixT8888'><Twitter /></Link>
+          <Link className='mx-3' aria-label='Go to github account' target='_blank' href='https://github.com/MohdZaheen123'><Github /></Link>
+          <Link className='mx-3' aria-label='Go to linkedin account' target='_blank' href='https://www.linkedin.com/in/mohamed-zaheen-a9a169256/'><Linkedin /></Link>
         </div>
 
       </div>
