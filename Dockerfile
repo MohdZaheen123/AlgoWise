@@ -6,7 +6,7 @@ RUN npm install
 COPY . .
 
 EXPOSE 3000
-ENV NEXT_PUBLIC_GITHUB_TOKEN=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
+ENV NEXT_PUBLIC_GITHUB_TOKEN=ghp_5RVeIUNZmxxxxxxxxxxxxxxxxx
 
 CMD npm run dev
 
