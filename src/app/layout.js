@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <link rel="preload" as="image" href="/code.png"/>
         {/* <script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script> */}
       </head>
       <body className={inter.className}>

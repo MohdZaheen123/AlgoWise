@@ -58,6 +58,7 @@ export const theme = {
           code: {
             width: '40%',
             margin: '0 auto',
+            color: '#2e8aa6'
           },
           aside: {
             border: '2px solid',
