@@ -16,7 +16,7 @@ export default function Checkout() {
     whileInView={{ opacity:1}}
     initial={{ opacity:0 }}
     transition={{ duration:1,repeat:0}}
-    className='absolute md:top-[255rem] z-30  h-32'>
+    className='absolute md:top-[210rem] z-30  h-32'>
     <motion.img
     animate={{ x:clicked?0:-105,rotate:clicked?20:0 }}
     initial={{ x:-100 }}

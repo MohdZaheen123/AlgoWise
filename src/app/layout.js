@@ -2,7 +2,6 @@
 import { Inter,Sevillana,Silkscreen} from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
-import Script from "next/script";
 
 
 
@@ -26,15 +25,15 @@ export default function RootLayout({ children }) {
       
 
         <div className='w-full h-full bg-black'>
-        <div className='max-w-[110rem] scroll-smooth mx-auto'>
+        <div className='max-w-[110rem]  scroll-smooth mx-auto'>
           <div className='main'>
         {children}
           </div>
         </div>
+        {/* <Script
+          src=  "https://static-bundles.visme.co/forms/vismeforms-embed.js" 
+        /> */}
         </div>
-        <Script
-          src=  "https://static-bundles.visme.co/forms/vismeforms-embed.js" strategy='lazyOnload'
-        />
         </body>
     </html>
   )

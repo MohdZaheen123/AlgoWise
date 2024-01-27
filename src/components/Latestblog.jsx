@@ -1,17 +1,31 @@
+import { getlatestdsa } from "@/lib/markdown"
+import { FileCode2 } from "lucide-react"
+import Link from "next/link"
 
-
-export default function Latestblog() {
+export default async function Latestblog() {
+  const posts = await getlatestdsa()
   return (
 
-    <div className=' mt-96 flex flex-col justify-center h-screen'>
-        <p className='pt-10 text-center text-white flex justify-center items-center text-2xl font-semibold'>Explore Blogs</p>
+    <div className='mt-20 flex flex-col justify-center h-screen'>
+        <p className='pt-10 text-center text-white flex justify-center items-center text-2xl font-semibold'>Explore New DSA Blogs</p>
     <div className='h-screen text-white  flex justify-center '>
-        <div className='flex-1 flex items-center'>
+        <div className='flex-1 items-center hidden lg:flex'>
 
            <video src="framer-motion-ball.webm" autoPlay playsInline loop muted className='h-96 mx-auto'></video>
         </div>
         <div className='w-2 md:h-[28rem] h-96 border-l ml-5 self-center'></div>
-        <div className='flex-1'></div>
+        <div className='flex-1 '>
+             <div className="flex flex-col justify-center items-center mt-32">
+                {
+                   posts.map((post) => (
+                    <Link href={{ pathname: `/dsa/${post.subtopic[0]}/${post.slug}` }} key={post.slug} className="w-[27rem]  group relative cursor-pointer overflow-hidden bg-black px-6 pt-10 my-3 pb-7 ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10 border">
+                        <h1 className="text-blue-700">{post.title}</h1>
+                        <p>{post.description}</p>
+                    </Link>
+                ))
+                }
+             </div>
+        </div>
     </div>
     </div>
   )

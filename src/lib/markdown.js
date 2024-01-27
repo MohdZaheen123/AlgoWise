@@ -92,3 +92,26 @@ export const getAllPostsMeta = async (branch,topic,subtopic) => {
 
     return posts
 }   	
+
+
+export const getlatestdsa= async () => {
+    noStore();
+    const repoFiletree = await axios.get(`https://api.github.com/repos/MohdZaheen123/Dev-Blogs/git/trees/main?recursive=1`,config)
+    const filesArray = repoFiletree.data.tree.map(obj => obj.path).filter(path => path.endsWith('.mdx'))
+
+    
+    const posts = []
+    const res=[]
+    for (const file of filesArray) {
+        const post = await getPostBySlug('main',file)
+        const { meta } = post
+        posts.push(meta)
+    }
+    posts.sort((a, b) => a.id - b.id);
+    posts.reverse()
+
+    for(let i=0;i<3;i++){
+        res.push(posts[i])
+    }
+    return res
+}
