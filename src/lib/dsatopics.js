@@ -49,7 +49,7 @@ export const dsatopic=[
     subtopic:[
         {
             subtopic:'Introduction to Trees',
-            link:'/dsa/trees?subtopic=binarysearch'
+            link:'/dsa/trees?subtopic=tree-into'
         }
     ]
   }
