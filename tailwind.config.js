@@ -55,8 +55,8 @@ export const theme = {
             color: 'darkcyan'
           },
           pre: {
-            color: '#00000',
-            'background-color': '#082630',
+            'border-radius': '20px',
+            'background-color': '#001324',
           },
           th: {
             color: '#a83246'
