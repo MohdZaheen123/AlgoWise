@@ -50,6 +50,10 @@ export const dsatopic=[
         {
             subtopic:'Introduction to Trees',
             link:'/dsa/trees?subtopic=tree-into'
+        },
+        {
+            subtopic:'Tree Problems',
+            link:'/dsa/trees?subtopic=tree-problems'
         }
     ]
   }
