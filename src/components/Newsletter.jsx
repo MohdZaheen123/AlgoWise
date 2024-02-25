@@ -1,12 +1,13 @@
 import Checkout from "./Checkout";
+import Script from 'next/script'
 
 
 export default function Newsletter() {
   return (
         
-    <div className='w-screen  mx-auto h-screen'>
-      <Checkout />
-      <iframe aria-label="News letter" className='w-screen pb-10  h-[54rem]' src="https://forms.visme.co/formsPlayer/31oogmqr-newsletter-subscription" frameborder="0"></iframe>
+    <div className=''>
+      <div class="visme_d" data-title="Newsletter Subscription" data-url="31oogmqr-newsletter-subscription" data-domain="forms" data-full-page="false" data-min-height="500px" data-form-id="13228"></div>
+      <Script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"  />
     </div>
 
   )

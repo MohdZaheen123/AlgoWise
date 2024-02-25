@@ -34,12 +34,6 @@ export default async function page({params}) {
                 <Link href={`#${index+1}`} key={index}><p className="text-md mt-3 hover:text-blue-600">{index+1}.{" "}{item}</p></Link>
               ))}
                </div>
-              {/* <div>
-              <p className="text-center text-lg font-semibold">Coding quote of the day :)</p>
-
-
-                <Quotecard />
-              </div> */}
              
             <Game />
             </div>

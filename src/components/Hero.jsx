@@ -1,16 +1,9 @@
 'use client'
 
 import LogoSlider from '@/components/LogoSlider'
-import Spline from '@splinetool/react-spline';
 import { motion } from 'framer-motion'
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card"
 import SpotLight from './SpotLight';
 import Personalinfo from './Personalinfo'
-import Decor from './Decor'
 
 export default function Hero() {
 

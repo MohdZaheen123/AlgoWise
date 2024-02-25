@@ -7,8 +7,8 @@ import { CardContent, Card } from "@/components/ui/card"
 
 export default function Component() {
   return (
-    <div className="min-h-screen mt-32">
-    <div key="1" className="bg-black text-white py-16 px-8">
+    <div className="min-h-screen md:mt-32">
+    <div key="1" className="bg-black text-white py-16 px-5">
       <h2 className="text-4xl font-bold leading-tight text-center">
         Under the hood ⚡️<br />
         <span className="text-sky-500">Discover blog features...</span>  
