@@ -1,12 +1,12 @@
-'use client'
+// 'use client'
 import { dsatopic } from '@/lib/dsatopics';
 import { MousePointer2, Asterisk } from 'lucide-react';
 import Link from 'next/link'
-import { useToast } from "@/components/ui/use-toast"
+// import { useToast } from "@/components/ui/use-toast"
 
 
 export default function SideNav(topic, subtopic) {
-	const { toast } = useToast()
+	// const { toast } = useToast()
 	return (
 		<aside className=" w-full  p-6 mt-20 md:mt-10 z-50 sm:w-80  rounded-xl text-white">
 			<Link className='flex items-center mb-3 text-md text-red-500' href='/blogs'><MousePointer2 className='h-4' />Back</Link>
@@ -17,14 +17,14 @@ export default function SideNav(topic, subtopic) {
 						<div className="flex flex-col space-y-1 ml-5">
 							{topic.subtopic.map((subtopic) => (
 								<Link
-								onClick={() => {
+								// onClick={() => {
 
-									toast({
-										title: 'Please Wait A While😇😇',
-										description: 'Accessing database... Hold on this may take a few seconds to load🕖',
+								// 	toast({
+								// 		title: 'Please Wait A While😇😇',
+								// 		description: 'Accessing database... Hold on this may take a few seconds to load🕖',
 	
-									})
-								}}
+								// 	})
+								// }}
 								href={`${subtopic.link}`} key={subtopic.subtopic} className="flex flex-col space-y-1 hover:text-blue-500">
 									{subtopic.subtopic}
 								</Link>

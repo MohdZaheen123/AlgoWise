@@ -8,6 +8,7 @@ export const fetchCache = 'force-no-store'
 export const dynamic = 'force-dynamic'
 export const dynamicParams = true
 
+
 // import { useSearchParams } from 'next/navigation'
 
 export default async function page({ params, searchParams }) {
@@ -73,3 +74,6 @@ export default async function page({ params, searchParams }) {
         </div>
     )
 }
+
+
+
