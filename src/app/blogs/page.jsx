@@ -40,12 +40,12 @@ export default function page() {
     <div className='h-full py-10 bg-black text-white  mx-auto md:w-screen'>
       <Link href='/' className='text-red-500 mx-10 text-lg font-semibold md:mx-32'>Home</Link>
       <h1 className='bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent text-center text-3xl font-bold'>Explore Blogs</h1>
-        <div className='mx-auto  bg-black flex items-center justify-center '>
-          <div className='flex flex-col w-[90%] items-center justify-center'>
-             <blockquote className='bg-purple-700  opacity-60 py-6 rounded-xl px-5 md:px-10 ml-14 mt-20 lg:w-[65rem]'>
+        <div className='mx-auto  bg-black flex items-center justify-center lg:w-[65rem]'>
+          <div className='flex flex-col w-[90%]'>
+             <blockquote className='bg-purple-700 opacity-60 py-6 rounded-xl px-5 md:px-10 ml-14 mt-20'>
                    Explore blogs related to various topics like DSA, web development, system design and many more.
                    stay updated with latest news and trends in tech industry.<span className='text-red-200'>Scroll Below </span>
-             </blockquote >
+             </blockquote>
             <div className="max-w-5xl mx-auto px-8">
               <CardHover items={projects} />
             </div>
