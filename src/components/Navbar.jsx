@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className='h-20  md:mb-10 flex items-center text-white
     '>
-      <div className={`mx-auto  flex justify-around w-[95%] `}>
+      <div className={`mx-auto  flex justify-around lg:w-[95%] w-[100%]`}>
             
             <Link href='/'><p className={` text-2xl font-bold`}><span className='text-blue-500'>Dev_</span>Dose</p></Link>
             <div className='flex text-base font-semibold m-1'>
