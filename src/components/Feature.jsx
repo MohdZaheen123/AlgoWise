@@ -16,7 +16,7 @@ export default function Component() {
                     <p className="text-gray-400 text-sm md:text-lg mb-3">Dive deep into new web dev topics. Build modern UI interface using next.js and shadcn UI.</p>
                     <Link href='/webdev' className={buttonVariants({ variant: "outline" })}>Explore Web</Link>
                 </div>
-                <video src="default.webm" autoPlay loop muted className=" w-[80%] lg:w-[47%] rounded-xl border border-blue-900 mt-3"></video>
+                <video src="default.webm" autoPlay loop muted className=" w-[95%] lg:w-[47%] rounded-xl border border-blue-900 mt-3"></video>
             </div>
 
 
