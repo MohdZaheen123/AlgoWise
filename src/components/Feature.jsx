@@ -16,14 +16,14 @@ export default function Component() {
                     <p className="text-gray-400 text-sm md:text-lg mb-3">Dive deep into new web dev topics. Build modern UI interface using next.js and shadcn UI.</p>
                     <Link href='/webdev' className={buttonVariants({ variant: "outline" })}>Explore Web</Link>
                 </div>
-                <video src="default.mp4" autoPlay loop muted className=" w-[80%] lg:w-[47%] rounded-xl border border-blue-900 mt-3"></video>
+                <video src="default.webm" autoPlay loop muted className=" w-[80%] lg:w-[47%] rounded-xl border border-blue-900 mt-3"></video>
             </div>
 
 
             <div className="w-[95%] mx-auto flex flex-col-reverse lg:flex-row  justify-center items-center mt-20 pt-10">
                
                {/* <video src="default.mp4" autoPlay loop muted className="w-[50%] rounded-xl "></video> */}
-               <img src="keyboard.png" className="w-[95%]  lg:w-[63%] rounded-lg border mt-5 border-blue-900" alt="" />
+               <img src="keyboard.webp" className="w-[95%]  lg:w-[63%] rounded-lg border mt-5 border-blue-900" alt="" />
                <div className=" md:mx-10  lg:static  text-center w-[70%] ">
                     <h2 className=" text-center text-lg md:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-pink-500 pb-5">
                         DSA Deep Dive
@@ -44,7 +44,7 @@ export default function Component() {
                     <p className="text-gray-400 text-sm md:text-lg mb-3">Stay updated with latest technical news in the industry</p>
                     <Link href='/news' className={buttonVariants({ variant: "outline" })}>Explore News</Link>
                 </div>
-               <video src="world3.mp4" autoPlay loop muted className=" w-[90%] rounded-xl mt-5"></video>
+               <video src="world.webm" autoPlay loop muted className=" w-[90%] rounded-xl mt-5"></video>
             </div>
         </div>
     </div>
