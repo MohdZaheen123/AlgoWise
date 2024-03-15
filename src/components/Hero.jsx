@@ -54,6 +54,7 @@ export default function page() {
     const logos = ["React", "Next.js", "Express", "JavaScript", "Mongodb", "DSA", "Node.js", "TypeScript", "Sql", "Docker"]
   return (
     <div className="min-h-screen text-center ">
+      <Navbar />
         <p className="text-white font-semibold text-4xl mt-14">Dive deep into coding</p>
         <p className="text-white">Let’s begin the Coding adventure</p>
         < LogoSlider logos={logos} />

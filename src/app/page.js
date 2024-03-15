@@ -10,7 +10,7 @@ import Feature from '@/components/Feature'
 export default function page() {
   return (
     <div className='overflow-x-hidden'>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero/>
       <Feature/>
       <Latestblog/>

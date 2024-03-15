@@ -5,8 +5,8 @@ import { buttonVariants } from "./ui/button";
 
 export default function Component() {
   return (
-    <div className="lg:mt-5 ">
-    <div className="min-h-screen shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.3)] flex flex-col py-20  mx-auto lg:w-[75%]">
+    <div className=" lg:mt-5 ">
+    <div className="min-h-screen shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.3)] flex flex-col mx-auto lg:w-[75%]">
       <p className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-pink-500 text-center text-3xl font-bold">Explore And Learn Devs!!</p>
             <div className="w-[95%]  mx-auto flex flex-col lg:flex-row  justify-center items-center pt-10">
                 <div className=" md:mx-10  lg:static  text-center py-3 ">
