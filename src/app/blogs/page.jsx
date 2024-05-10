@@ -55,16 +55,16 @@ export default function page() {
             <p className='text-center'>Please provide your feedback and suggestions to me, for imporving this blog at <Link href='https://twitter.com/TheMatrixT8888' target='_blank' className='text-blue-500'>Twitter</Link></p>
 
             <div className='flex flex-wrap justify-center  my-5 bg-gradient-to-r from-sky-600 to-pink-500 bg-clip-text text-transparent'>
-              <div className='flex items-center md:flex-col '>
-                <Image src='/plan.png' width={200} height={200} className='' alt='' />
+              <div className='flex items-center flex-col '>
+                <img src='/plan.png' className='h-28' alt='' />
                 <p className='text-center font-bold text-lg '>Plan</p>
               </div>
-              <div className='flex items-center md:flex-col  '>
-                <Image src='/build.png' width={200} height={200} className='' alt='' />
+              <div className='flex items-center flex-col  '>
+                <img src='/build.png'  className='h-28' alt='' />
                 <p className='text-center font-bold text-lg'>Design</p>
               </div>
-              <div className='flex items-center md:flex-col  '>
-                <Image src='/design.png' width={200} height={200} className='' alt='' />
+              <div className='flex items-center flex-col  '>
+                <img src='/design.png'  className='h-28' alt='' />
                 <p className='text-center font-bold text-lg'>Build</p>
               </div>
             </div>
