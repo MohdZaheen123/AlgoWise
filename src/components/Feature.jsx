@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Feature() {
   return (
-    <div className="md:mt-80 mt-56">
+    <div className="md:mt-80 mt-12 relative z-50 ">
       <p className="bg-clip-text text-transparent bg-gradient-to-r from-sky-600 to-pink-500 text-center text-3xl font-bold py-10">Explore And Learn Devs!!</p>
     <div className="flex justify-center items-center text-white  flex-col-reverse lg:flex-row">
       
@@ -23,7 +23,7 @@ export default function Feature() {
         radius={80}
       >
         {/* <Icons.whatsapp /> */}
-        <Link className="flex flex-col" href='/blogs'>
+        <Link className="flex flex-col" href='/design'>
         <File className="text-blue-500 "/>
         <span className="text-sm ">
         System design
@@ -36,7 +36,7 @@ export default function Feature() {
         delay={10}
         radius={80}
       >
-        <Link className="flex flex-col" href='/blogs'>
+        <Link className="flex flex-col" href='/dsa'>
         <Code2 className="text-blue-500 "/>
         <span className="text-sm">
         DSA
@@ -51,7 +51,7 @@ export default function Feature() {
         radius={190}
         duration={20}
       >
-        <Link className="flex flex-col" href='/blogs'>
+        <Link className="flex flex-col" href='/news'>
         <Newspaper className="text-blue-500 "/>
         <span className="text-sm">
         Tech news
@@ -65,7 +65,7 @@ export default function Feature() {
         duration={20}
         delay={20}
       >
-        <Link className="flex flex-col" href='/blogs'>
+        <Link className="flex flex-col" href='/webdev'>
         <Globe className="text-blue-500 "/>
         <span className="text-sm">
         Web dev
@@ -87,7 +87,7 @@ export default function Feature() {
     <li className="pt-5 list-disc">Learn modern web dev technologies and build eye catching UI</li>
     <li className="pt-5 list-disc">Build scalable systems by learning system design and stay updated with latest tech news!!</li>
       </ul>
-     <img src="computer.svg" className="h-56" alt="" />
+     <img src="computer.svg" className="h-56 hidden md:block" alt="" />
     </div>
     </div>
     </div>

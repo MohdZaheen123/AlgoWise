@@ -12,11 +12,11 @@ export default function page() {
         {/* <TypewriterEffectSmooth words={words} /> */}
         <p className="text-3xl text-white ">Nothing up here explore other sections</p>
         <div className="flex items-center justify-center md:flex-row my-10">
-          <Link href='/blogs' className="flex justify-center items-center w-40 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-            Back
-          </Link>
           <Link href='/' className="w-28 h-10 flex justify-center items-center rounded-xl bg-white text-black border border-black  text-sm">
             Home
+          </Link>
+          <Link href='/blogs' className="flex justify-center items-center w-40 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+            Blogs
           </Link>
         </div>
       </div>
