@@ -66,7 +66,7 @@ export const dsatopic=[
         //     link:'/dsa/trees?subtopic=tree-into'
         // },
         {
-            subtopic:'DP Problems',
+            subtopic:'1D dp problems',
             link:'/dsa/dynamic-programming?subtopic=1d-dp'
         }
     ]
