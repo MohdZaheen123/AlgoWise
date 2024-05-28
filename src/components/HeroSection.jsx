@@ -28,7 +28,7 @@ export default function HeroSection() {
         {/* <AnimatedBadge/> */}
         <div>
         <p className='text-gray-500 text-center font-semibold text-lg py-1 px-3 rounded-xl cursor-pointer'>✨ <span className='text-blue-600'>Algo</span>Wise is now live!!</p>
-        <p className='text-center text-5xl text-blue-200 pt-1 font-semibold'>Learn Build Grow</p>
+        <p className='text-center bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl pt-1'>Learn Build Grow</p>
     </div>
       <div className="hidden md:block">
         <LogoSlider logos={logos} />

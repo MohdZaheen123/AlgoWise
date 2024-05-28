@@ -1,7 +1,6 @@
 
 
 import { Twitter, Github, Linkedin } from 'lucide-react';
-import { Badge } from "@/components/ui/badge"
 import Link from 'next/link';
 
 
@@ -11,7 +10,7 @@ export default function Footer() {
     <div className='mt-10 mb-10 md:mt-72'>
       <div className='text-white  flex-col flex items-center'>
         <p className='text-center text-lg font-semibold'>Follow My Socials</p>
-        <Badge >@Mohamed Zaheen</Badge>
+        <span >@Mohamed Zaheen</span>
         <div className='flex pt-10 pb-4'>
           <Link className='mx-3' aria-label='Go to twitter account' target='_blank' href='https://twitter.com/TheMatrixT8888'><Twitter /></Link>
           <Link className='mx-3' aria-label='Go to github account' target='_blank' href='https://github.com/MohdZaheen123'><Github /></Link>

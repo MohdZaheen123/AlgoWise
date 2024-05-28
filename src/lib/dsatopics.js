@@ -56,6 +56,20 @@ export const dsatopic=[
             link:'/dsa/trees?subtopic=tree-problems'
         }
     ]
+  },
+  {
+    topic:'Dynamic programming',
+    link:'/dsa/dynamic-programming',
+    subtopic:[
+        // {
+        //     subtopic:'Introduction to Trees',
+        //     link:'/dsa/trees?subtopic=tree-into'
+        // },
+        {
+            subtopic:'DP Problems',
+            link:'/dsa/dynamic-programming?subtopic=1d-dp'
+        }
+    ]
   }
   
 ]

@@ -3,7 +3,6 @@
 import { getPostBySlug } from "@/lib/markdown"
 import Link from "next/link"
 import { ChevronsLeft } from 'lucide-react';
-import Footer from "@/components/Footer";
 import Game from "@/components/Game";
 import Blogrender from "@/components/Blogrender";
 

@@ -4,8 +4,6 @@ import { cn } from "@/lib/utils";
 import { AlignJustify,X } from 'lucide-react';
 import SideNav from '@/components/SideNav';
 import { useState } from 'react';
-import {MDXProvider} from '@mdx-js/react'
-import { Toaster } from "@/components/ui/toaster"
 export default function Layout({ children }) {
 
 
@@ -23,7 +21,6 @@ export default function Layout({ children }) {
       <div className="flex-grow md:overflow-y-auto h-screen  overflow-scroll">
         {children}
         </div>
-        <Toaster />
     </div>
   );
 }

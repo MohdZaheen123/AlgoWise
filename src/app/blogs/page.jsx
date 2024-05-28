@@ -1,5 +1,5 @@
 
-import Image from 'next/image'
+
 import CardHover from '@/components/CardHover';
 import Link from 'next/link';
 
