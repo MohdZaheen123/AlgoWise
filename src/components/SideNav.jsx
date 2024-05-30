@@ -1,6 +1,6 @@
 // 'use client'
 import { dsatopic } from '@/lib/dsatopics';
-import { MousePointer2, Asterisk } from 'lucide-react';
+import { MousePointer2, Asterisk, Crown } from 'lucide-react';
 import Link from 'next/link'
 // import { useToast } from "@/components/ui/use-toast"
 
@@ -13,23 +13,15 @@ export default function SideNav(topic, subtopic) {
 			<nav className="space-y-8 text-sm">
 				{dsatopic.map((topic) => (
 					<div className="space-y-2" key={topic.topic}>
-						<Link href={topic.link} className="text-sm font-semibold tracki uppercase hover:text-blue-500">{topic.topic}</Link>
-						<div className="flex flex-col space-y-1 ml-5">
-							{topic.subtopic.map((subtopic) => (
+						<Link href={topic.link} className="text-sm font-bold tracki  hover:text-blue-500 flex">{topic.topic}{topic.topic=='Leetcode Daily Problem'?<Crown className='h-5 w-5 text-yellow-400' />:""}</Link>
+						{topic.subtopic&&<div className="flex flex-col space-y-1 ml-5">
+							{topic.subtopic?.map((subtopic) => (
 								<Link
-								// onClick={() => {
-
-								// 	toast({
-								// 		title: 'Please Wait A While😇😇',
-								// 		description: 'Accessing database... Hold on this may take a few seconds to load🕖',
-	
-								// 	})
-								// }}
 								href={`${subtopic.link}`} key={subtopic.subtopic} className="flex flex-col space-y-1 hover:text-blue-500">
 									{subtopic.subtopic}
 								</Link>
 							))}
-						</div>
+						</div>}
 					</div>
 				))}
 			</nav>

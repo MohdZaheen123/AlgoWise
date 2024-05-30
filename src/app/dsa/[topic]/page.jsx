@@ -63,7 +63,7 @@ export default async function page({ params, searchParams }) {
                             <br />
                             <span className="pt-5 text-base font-semibold leading-7">
 
-                                <span className="text-sky-500 transition-all duration-300 group-hover:text-white">Read the docs &rarr;
+                                <span className="text-sky-500 transition-all duration-300 group-hover:text-white">Read the blog &rarr;
                                 </span>
 
                             </span>
