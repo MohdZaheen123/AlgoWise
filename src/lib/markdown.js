@@ -22,7 +22,7 @@ let config = {
 
 export const getPostBySlug = async (branch,fileName) => {
     
-    // noStore();
+    noStore();
 
     const realSlug = fileName.replace(/\.mdx$/, '')
     const res = await axios.get(`https://raw.githubusercontent.com/MohdZaheen123/Dev-Blogs/${branch}/${realSlug}.mdx`,config)
@@ -80,7 +80,7 @@ export const getAllPostsMeta = async (branch,topic,subtopic) => {
             }
         }
         else{
-            if (post && post.meta.subtopic.includes(subtopic)) {
+            if (post && post.meta.subtopic?.includes(subtopic)) {
                     const { meta } = post
                     posts.push(meta)
                 }
