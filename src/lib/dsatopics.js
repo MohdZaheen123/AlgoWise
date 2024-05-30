@@ -70,7 +70,7 @@ export const dsatopic=[
             link:'/dsa/dynamic-programming?subtopic=1d-dp'
         },
         {
-            subtopic:'1d dp problems',
+            subtopic:'2d dp problems',
             link:'/dsa/dynamic-programming?subtopic=2d-dp'
         },
 
