@@ -1,6 +1,6 @@
 export const dsatopic = [
     {
-        topic: 'Leetcode Daily Problem',
+        topic: 'Leetcode Problems',
         link: '/dsa/leetcode',
     },
     {
